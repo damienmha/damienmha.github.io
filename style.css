@@ -53,8 +53,6 @@ a {
 .profile-wrapper {
   width: 120px;            /* Adjust this to control size */
   height: 120px;
-  border-radius: 50%;      /* Makes it circular */
-  overflow: hidden;        /* Crops the image to the circle */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
