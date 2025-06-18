@@ -51,8 +51,9 @@ a {
 }
 
 .profile-wrapper {
-  width: 120px;            /* Adjust this to control size */
+  width: 120px;            /* Controls size */
   height: 120px;
+  overflow: hidden;        /* Crops anything outside the box */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
