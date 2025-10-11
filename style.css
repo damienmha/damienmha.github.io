@@ -144,7 +144,21 @@ a:hover {
   object-position: center top;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center; /* or space-around, space-between */
+  gap: 20px;
+  flex-wrap: wrap; /* lets images stack on smaller screens */
+  margin: 10px 0;
+}
 
+.image-row img {
+  max-width: 45%;
+  height: auto; /* maintain natural aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  object-fit: contain; /* ensures no distortion */
+}
 
 /* =========
    Footer
