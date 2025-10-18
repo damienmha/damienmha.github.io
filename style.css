@@ -160,6 +160,43 @@ a:hover {
   object-fit: contain; /* ensures no distortion */
 }
 
+.pdf-container {
+  position: relative;
+  width: 100%;
+  padding-top: 130%; /* Aspect ratio for mobile responsiveness */
+}
+
+.pdf-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Optional: tweak padding for different devices */
+@media (min-width: 768px) {
+  .pdf-container {
+    padding-top: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pdf-container {
+    padding-top: 60%;
+  }
+}
+
+.resume-download {
+  text-align: center;
+  margin-top: 20px;
+}
+.resume-download a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
 /* =========
    Footer
    ========= */
