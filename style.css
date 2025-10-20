@@ -211,6 +211,12 @@ a:hover {
   background: var(--link-color);
 }
 
+.tableauPlaceholder {
+  width: 100%;
+  max-width: 800px; /* optional, keeps it from being huge on desktop */
+  margin: 0 auto;
+}
+
 /* =========
    Footer
    ========= */
