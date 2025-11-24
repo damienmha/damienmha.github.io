@@ -40,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  font-size: 19px;
+  font-size: 18px;
 }
 
 /* =========
@@ -58,7 +58,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.9rem;
+  font-size: 2.0rem;
 }
 
 nav a {
@@ -66,7 +66,7 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: opacity 0.2s ease-in-out;
 }
 
@@ -88,7 +88,7 @@ h2 {
   color: var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 5px;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /* =========
