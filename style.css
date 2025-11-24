@@ -203,6 +203,20 @@ section:hover {
     opacity: 0.8;
   }
 
+  .cv-role {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--accent-color);
+  }
+  
+  .cv-org {
+    margin-top: 2px;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.85;
+  }
+  
+
   /* =========
    CV Bullet Lists
    ========= */
