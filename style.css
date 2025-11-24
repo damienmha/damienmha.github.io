@@ -215,6 +215,33 @@ section:hover {
     font-weight: 500;
     opacity: 0.85;
   }
+
+  /* Experience & Extracurricular Formatting */
+
+.cv-entry-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-role {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 2px;
+}
+
+.cv-org {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 1px;
+}
+
+.cv-location {
+  font-size: 0.9rem;
+  opacity: 0.75;
+  margin-top: 2px;
+}
   
 
   /* =========
