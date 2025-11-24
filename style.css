@@ -138,6 +138,145 @@ section:hover {
 }
 
 /* =========
+   CV Title + Intro
+   ========= */
+   .cv-title {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+  }
+  
+  .cv-intro {
+    margin-bottom: 30px;
+    font-size: 1.15rem;
+    opacity: 0.9;
+  }
+  
+/* =========
+   CV Page – Grid Layouts
+   ========= */
+
+   .cv-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 12px 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .cv-label {
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+  
+  .cv-value {
+    color: var(--text-color);
+  }
+  
+  /* =========
+     CV Entries (Experience, Education)
+     ========= */
+  
+  .cv-entry {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    margin-bottom: 25px;
+  }
+  
+  .cv-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .cv-entry-header strong {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+  }
+  
+  .cv-dates {
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+
+  /* =========
+   CV Bullet Lists
+   ========= */
+
+.cv-list {
+  margin-top: 12px;
+  padding-left: 20px; /* standard bullet indent */
+  color: var(--text-color);
+}
+
+.cv-list li {
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.cv-list li::marker {
+  color: var(--accent-color); /* colored bullets like your theme */
+}
+  
+  /* =========
+     CV Skills Grid
+     ========= */
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .skills-grid div {
+    background: var(--card-bg);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    font-weight: 600;
+  }
+
+  /* Better spacing for bullets in CV entries */
+.cv-entry ul {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 22px;
+}
+
+.cv-entry li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Subtle section divider for CV page */
+main section {
+  border-left: 4px solid rgba(138, 43, 226, 0.25);
+  padding-left: 18px;
+}
+  
+  /* =========
+     Responsive Tweaks
+     ========= */
+  
+  @media (max-width: 600px) {
+    .cv-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cv-entry-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+  }  
+
+/* =========
    Links
    ========= */
 a {
