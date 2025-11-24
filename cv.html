@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Damien Ha – CV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Damien Ha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="cv.html">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+  </header>
+
+  <main>
+    <!-- BASICS -->
+    <section>
+      <h2>Basics</h2>
+
+      <div class="cv-grid">
+        <div class="cv-label">Name</div>
+        <div class="cv-value">Damien Ha</div>
+
+        <div class="cv-label">Email</div>
+        <div class="cv-value">damienmaiha@gmail.com</div>
+
+        <div class="cv-label">Location</div>
+        <div class="cv-value">San Jose, CA</div>
+
+        <div class="cv-label">Website</div>
+        <div class="cv-value"><a href="https://damienmha.github.io" target="_blank">damienmha.github.io</a></div>
+
+        <div class="cv-label">Summary</div>
+        <div class="cv-value">
+          Aspiring data scientist with experience in Python, statistical modeling, and analytics applied to music and entertainment.
+          Passionate about insights, storytelling, and building data-driven tools.
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <strong>Data Analyst Intern</strong> — Company Name  
+          <span class="cv-dates">2024</span>
+        </div>
+        <ul>
+          <li>Example bullet describing responsibilities.</li>
+          <li>Another bullet describing project impact.</li>
+          <li>Use concise, quantifiable results when possible.</li>
+        </ul>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <strong>Another Position</strong> — Company Name  
+          <span class="cv-dates">2023</span>
+        </div>
+        <ul>
+          <li>Contributed to a team building X.</li>
+          <li>Improved performance of Y by Z%.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <strong>UCLA</strong> — B.S. Statistics & Data Science  
+          <span class="cv-dates">2020 – 2024</span>
+        </div>
+        <p>Relevant coursework, activities, and accomplishments.</p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <strong>Evergreen Valley College</strong> — General Education  
+          <span class="cv-dates">2017 – 2021</span>
+        </div>
+        <p>Courses (Linear Algebra, Differential Equations, etc.)</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div>Python</div><div>Pandas</div>
+        <div>NumPy</div><div>Matplotlib</div>
+        <div>SQL</div><div>R</div>
+        <div>Tableau</div><div>Machine Learning</div>
+      </div>
+    </section>
+
+    <!-- OPTIONAL: LANGUAGES -->
+    <section>
+      <h2>Languages</h2>
+
+      <div class="cv-grid">
+        <div class="cv-label">English</div>
+        <div class="cv-value">Native</div>
+
+        <div class="cv-label">Vietnamese (example)</div>
+        <div class="cv-value">Conversational</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Damien Ha</p>
+  </footer>
+
+  <!-- Theme Script -->
+  <script>
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+    }
+
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      applyTheme(prefersDark ? "dark" : "light");
+    }
+
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const newTheme = current === "dark" ? "light" : "dark";
+      applyTheme(newTheme);
+      localStorage.setItem("theme", newTheme);
+      toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
+    });
+  </script>
+
+</body>
+</html>
