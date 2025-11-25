@@ -432,7 +432,7 @@ a:hover {
 
 .download-btn {
   display: inline-block;
-  background: var(--accent-color);
+  background: #4B0082;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -441,7 +441,7 @@ a:hover {
 }
 
 .download-btn:hover {
-  background: var(--link-color);
+  background: #36006A;
 }
 
 .tableauPlaceholder {
