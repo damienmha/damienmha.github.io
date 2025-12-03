@@ -43,32 +43,9 @@
   <footer>
     <p>© 2025 Damien Ha</p>
   </footer>
-  <script>
-    // Apply user preference on load, fallback to system preference
-    function applyTheme(theme) {
-      document.documentElement.setAttribute("data-theme", theme);
-    }
   
-    // Load saved theme or system preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      applyTheme(savedTheme);
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      applyTheme(prefersDark ? "dark" : "light");
-    }
-  
-    // Toggle button logic
-    const toggleBtn = document.getElementById("theme-toggle");
-    toggleBtn.addEventListener("click", () => {
-      const current = document.documentElement.getAttribute("data-theme");
-      const newTheme = current === "dark" ? "light" : "dark";
-      applyTheme(newTheme);
-      localStorage.setItem("theme", newTheme);
-  
-      toggleBtn.textContent = newTheme === "dark" ? "☀️" : "🌙";
-    });
-  </script>
+  <script src="theme.js"></script>
+
   
 </body>
 </html>
