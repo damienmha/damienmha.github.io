@@ -1,3 +1,4 @@
+// function to create light mode to dark mode toggle
 
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
